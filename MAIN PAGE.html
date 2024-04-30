@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So You Want to be a Pilot?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('E:/AAAA 4th Semester/WEB TECH/PROJECT/Source Videos/Intro2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto 60px; 
+            padding: 30px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 32px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            line-height: 1.6;
+            color: #666;
+        }
+        ul {
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+            color: #666;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+        }
+        h2 + p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #666;
+            font-size: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td a {
+            text-decoration: none;
+            color: #333;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        video {
+            display: block;
+            margin: 0 auto;
+            width: 700px; 
+            height: 450px; 
+            max-width: 100%;
+            
+
+        }
+        .bold-text {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .footer {
+            background-color: #ffffff;
+            border-top: var(--border);
+            position: sticky;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 20px;
+            padding: 4px;
+            color: var(--black);
+            margin-top: 1rem;
+            z-index: 1000;
+        } 
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background: rgba(0, 0, 0, 0.842);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #loginForm {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            z-index: 1001;
+        }
+
+        #loginForm input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        #loginForm button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: rgb(4, 255, 0);
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        function openRegisterForm() 
+        {
+            document.getElementById('loginForm').style.display = 'block';
+        }
+        function closeLoginForm() 
+        {
+            document.getElementById('loginForm').style.display = 'none';
+        }
+    
+    
+        function validateForm() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const email = document.getElementById('email').value;
+    
+        
+        let errorMessages = [];
+        if (!username) {
+            errorMessages.push('Username is required.');
+        }
+        if (password.length < 6) {
+            errorMessages.push('Password must be at least 6 characters long.');
+        }
+        
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            errorMessages.push('Please enter a valid email address.');
+        }
+        
+        if (errorMessages.length > 0) {
+            alert('Form submission failed:\n' + errorMessages.join('\n'));
+            return false;
+        }
+        return true; }
+        </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="PROJECT.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#types">Types</a>
+        <a href="#" onclick="openRegisterForm()">Register</a> 
+    </div>
+
+    <!--Registration Form-->
+    <div id="loginForm" class="login-form">
+        <form id="registrationForm" onsubmit="return validateForm()">
+        <h2>Register</h2> 
+        <form>
+            <div class="form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <br>
+            <div class="form">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <br>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <input type="submit" value="Register"> 
+            <button type="button" onclick="closeLoginForm()">Cancel</button>
+        </form>
+    </div><br><br>
+    <div class="container">
+        <h1>So You Want to be a Pilot?</h1>
+        <video width="800" height="450" autoplay loop muted>
+            <source src="E:\AAAA 4th Semester\WEB TECH\PROJECT\Source Videos\IntroFinal.mp4" type="video/mp4">
+        </video>
+        <ul>
+            <li>A Challenging Profession.</li>
+            <li>Great Opportunity for Women.</li>
+            <li>With 1000+ Aircrafts on Order and at least 12 Pilots Required per Aircraft per Day.</li>
+            <li>The Pilots are in Great Demand.</li>
+            <li>New Airlines Coming Up, Aviation Sector is Growing.</li>
+            <li>The Future is Bright.</li>
+        </ul>
+        <h2 id="about">About the Website</h2>
+        <p>This Website will take you through the right path to become a Pilot. We have explained the different types of Pilot 
+            jobs, covered 3 National and 3 International Airlines (Other Airlines have more or the less same procedure) and the eligibility to of each. Just 
+            Scroll through and get ready to hustle to earn your wings.**
+        </p>
+        <h2 id="types">Types of Pilots</h2>
+        <table>
+            <tr>
+                <th>Military</th>
+                <th>Commercial</th>
+                <th>Other</th>
+            </tr>
+            <tr>
+                <td><a href="Indian Army.html" class="bold-text">Army</a></td>
+                <td><a href="AirIndia.html" class="bold-text">Air India</a></td>
+                <td><a href="PrivateJetsCharter.html" class="bold-text">Private Jets</a></td>
+            </tr>
+            <tr>
+                <td><a href="AirForce.html" class="bold-text">Air Force</a></td>
+                <td><a href="Indigo.html" class="bold-text">Indigo</a></td>
+                <td><a href="Cargo.html" class="bold-text"> Cargo/Freighter </a></td>
+            </tr>
+            <tr>
+                <td><a href="Navy.html" class="bold-text">Navy</a></td>
+                <td><a href="Lufthansa.html" class="bold-text">Lufthansa</a></td>
+                <td></td>
+            </tr>
+             
+            <tr>
+                <td></td>
+                <td><a href="Emirates.html" class="bold-text">Emirates</a></td>
+                <td></td>
+            </tr>
+           
+        </table>
+        <p class="bold-text">These are only some of the examples of Airlines but there are many more which
+            have more or the less same eligibility criterion.
+        </p>
+
+        <p>** We are covering as to how a normal graduate in India can become a Pilot.</p> 
+        
+    </div>
+    <footer class="footer">
+        &copy; copyright @ 2024 by <span>Shaurya Kaushik</span> | all rights reserved.
+    </footer>
+</body>
+</html>
+
