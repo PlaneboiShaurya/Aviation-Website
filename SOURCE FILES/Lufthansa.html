@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lufthansa</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('E:/AAAA 4th Semester/WEB TECH/PROJECT/Source Videos/Lufthansa2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1{
+            color: #333;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .logo {
+            width: 80px; 
+            height: auto; 
+            margin: 0 15px; 
+        }
+        
+        h2 {
+            text-align: left;
+            color: #333;
+            font-size: 30px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            color: #666;
+            font-size: 22px;
+        }
+        ul {
+            margin-top: 20px;
+            list-style-type: disc;
+            padding: 0;
+            text-align: left;
+            font-size: 22px;
+
+        }
+        ul li {
+            margin-bottom: 10px;
+            color: #666;
+            text-align: left;
+        }
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; 
+        }
+     
+        .footer {
+            background-color: #ffffff;
+            border-top: var(--border);
+            position: sticky;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 20px;
+            padding: 4px;
+            color: var(--black);
+            margin-top: 1rem;
+            z-index: 1000;
+        } 
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #loginForm {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            z-index: 1001;
+        }
+
+        #loginForm input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        #loginForm button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: rgb(4, 255, 0);
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="PROJECT.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#eligibility">Eligibility & Selection</a>
+    </div><br><br>
+    <div class="container">
+        <h1><img class="logo" src="E:/AAAA 4th Semester/WEB TECH/PROJECT/Source Videos/Lufthansa.png" alt="Logo 1"> <span>Lufthansa</span> <img class="logo" src="E:/AAAA 4th Semester/WEB TECH/PROJECT/Source Videos/Lufthansa.png" alt="Logo 2"></h1>
+        <video width="700" height="450" autoplay loop muted>
+            <source src="E:\AAAA 4th Semester\WEB TECH\PROJECT\Source Videos/Lufthansa.mp4" type="video/mp4">
+        </video>
+        <h2 id="about">About</h2>
+        <p><b>Lufthansa, a German airline, has a rich history dating back to 1955 and is known for its exceptional service and reliability. Over the years, it has evolved into one of the largest and most prestigious airlines globally, operating flights to over 220 destinations across six continents. Despite facing challenges such as economic downturns and stiff competition, Lufthansa has remained resilient and adaptable, continuously innovating to meet changing consumer demands. Looking ahead, Lufthansa aims to leverage its strong brand reputation, 
+            expand its route network, and embrace sustainable practices to ensure its continued success in the dynamic aviation industry. Lufthansa also boasts a world class fleet of Aircrafts which are really the Pilot and the Passenger's delight.</p></b>
+        
+        <h2 id="eligibility">Eligibility Conditions and Selection Criterion</h2>
+        <ul><p>
+            <li><strong>Age: </strong> Candidate must be older than 18 years.</li>
+            <li><strong>Lufthansa has Cadet Pilot Program from the Europen Flight Training Academy is a great oppurtunity for aspiring Pilots with the start of the art facilities they train you to become the best Pilots.</strong></li>
+            <li><strong>Education: </strong>A high school diploma or equivalent is typically required, with many candidates also pursuing aviation-related degrees.</li>
+            <li><strong>Nationality: </strong>Lufthansa usually requires candidates to hold a residency of a country within the European Union or Switzerland.</li>
+            <li><strong>Flight Training: </strong>Completion of flight training from an accredited institution, accumulating a set number of flight hours.</li>
+            <li><strong>Licenses: </strong>Obtainment of necessary licenses, including Private Pilot License (PPL), Commercial Pilot License (CPL), Instrument Rating (IR), Multi-Engine Rating (ME), and Airline Transport Pilot License (ATPL).</li>  
+            <li><strong>Medical Fitness: </strong> Passing rigorous medical examinations to ensure physical and mental fitness.</li>
+            <li><strong>Language Proficiency: </strong> Proficiency in English and potentially other languages relevant to flight operations.</li> 
+            <li><strong>Experience: </strong>  Some level of flight experience may be required, depending on the role and aircraft type.</li>
+            <li><strong>Additional Requirements: </strong> Certain certifications or qualifications may be necessary for specific roles or aircraft types.</li>
+
+        </p></ul>
+        
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="https://www.lufthansa.com/in/en/homepage" target="_blank">Official Lufthansa Website</a></li>
+            <li><a href="https://www.be-lufthansa.com/en/pilot" target="_blank">Careers at Lufthansa</a></li>
+            <li><a href="https://www.lufthansa.com/ge/en/seat-maps" target="_blank">Lufthansa - Fleet</a></li>
+            <li><a href="https://www.european-flight-academy.com/en/" target="_blank">Lufthansa Flight Training Academy</a></li>
+
+            
+
+        </ul>
+    </div>
+    <footer class="footer">
+        &copy; copyright @ 2024 by <span>Shaurya Kaushik</span> | all rights reserved.
+    </footer>
+</body>
+</html>
