@@ -1,6 +1,11 @@
 # Aviation-Website
-Shaurya Kaushik Btech CSE AIML B9 500107220 R2142221351
-# I have used integrated Java Scropt and CSS.
+Shaurya Kaushik 
+Btech CSE AIML B9
+500107220 
+R2142221351
+
+-->I have used integrated Java Script and CSS.
+
 This Website will take you through the right path to become a Pilot. We have explained the different types of Pilot jobs, Military Aviation covered 2 National and 2 International Airlines (Other Airlines have more or the less same procedure) and the eligibility to of each. Just read through and get ready to hustle to earn your wings.
 
 I have hosted the website
